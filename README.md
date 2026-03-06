@@ -105,27 +105,24 @@ Final model performance:
 
 # Results
 
-## Baseline Model
+## Baseline Model  
 Accuracy: **0.5863**
 
 <img width="495" height="495" alt="image" src="https://github.com/user-attachments/assets/333bf26f-7cab-47a9-9e8f-7e9b21086e02" />
 
-
 ---
 
-## Improved Model (`train2.1`)
+## Improved Model (`train2.1`)  
 Accuracy: **0.8185**
 
 <img width="492" height="492" alt="image" src="https://github.com/user-attachments/assets/d8fb1206-ba9e-424c-8e29-1a22b6117c5d" />
 
-
 ---
 
-## Final Model (`train2.2`)
+## Final Model (`train2.2`)  
 Accuracy: **0.8512**
 
 <img width="532" height="532" alt="image" src="https://github.com/user-attachments/assets/1bdb5f2a-e6fa-43f6-a4d1-fa9de7201d43" />
-
 
 The confusion matrices illustrate how classification accuracy improves as the model architecture becomes more sophisticated.
 
@@ -134,21 +131,24 @@ Most remaining errors occur between visually similar butterfly species.
 ---
 
 # Repository Structure
+
+```
 butterfly-classifier
 │
-├ train.py
-├ train2.0.py
-├ train2.1.py
-├ train2.2.py
+├── train.py
+├── train2.0.py
+├── train2.1.py
+├── train2.2.py
 │
-├ images
-│ baseline_confusion_matrix.png
-│ train21_confusion_matrix.png
-│ train22_confusion_matrix.png
+├── images/
+│   ├── baseline_confusion_matrix.png
+│   ├── train21_confusion_matrix.png
+│   └── train22_confusion_matrix.png
 │
-├ requirements.txt
-├ .gitignore
-└ README.md
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
 
 ---
 
@@ -156,20 +156,27 @@ butterfly-classifier
 
 Install dependencies using:
 
+```bash
 pip install -r requirements.txt
-
+```
 
 ---
 
 # Running the Models
 
 Baseline training:
+
+```bash
 python train.py
+```
 
 Improved models:
+
+```bash
 python train2.0.py
 python train2.1.py
 python train2.2.py
+```
 
 ---
 
@@ -178,7 +185,10 @@ python train2.2.py
 The butterfly dataset used for training is **not included in this repository due to size limitations**.
 
 The code expects the dataset to be placed in the following directory:
+
+```
 ButterflyClassificationDataset/
+```
 
 ---
 
@@ -196,6 +206,6 @@ ButterflyClassificationDataset/
 
 # Author
 
-Heather Xin Coyne 
+Heather Xin Coyne  
 Tsinghua University  
 Artificial Intelligence Course Project
