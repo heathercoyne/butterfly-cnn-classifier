@@ -1,0 +1,25 @@
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Dataset (too large for GitHub)
+ButterflyClassificationDataset/
+
+# Training outputs
+train_output/
+train2.0 output/
+train2.1 output/
+train2.2 output/
+
+# Large files
+*.zip
+
+# Reports
+*.docx
+
+# OS files
+.DS_Store
+Thumbs.db
